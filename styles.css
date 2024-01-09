@@ -8,7 +8,7 @@ h1{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #111;
     display: flex;
 
 }
@@ -27,11 +27,19 @@ h1{
 }
 
 .Navigation li a:hover:not(.active) {
-    background-color: #111;
+    background-color: #333;
 }
 
 .Navigation .active {
     background-color: palevioletred;
+}
+
+.inputs{
+    display: flex;
+    flex-flow: column;
+    width: 20rem;
+    margin: auto;
+    font-size: 30px;
 }
 @media only screen and (max-width: 450px) {
     .Navigation ul{
@@ -42,7 +50,13 @@ h1{
         float: none;
     }
     .Navigation li a {
-        padding:3vw 5vw;
-        font-size: 4.5vw;
+        padding:3vw 5.7vw;
+        font-size: 4vw;
+    }
+    .inputs{
+        display: flex;
+        flex-flow: column;
+        width: 60vw;
+        margin: auto;
     }
   }
