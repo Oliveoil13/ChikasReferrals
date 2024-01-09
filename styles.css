@@ -2,3 +2,47 @@ h1{
     text-align: center;
     color: palevioletred;
 }
+
+.Navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+
+}
+.Navigation li{
+    float: left;
+}
+
+
+
+.Navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.Navigation li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.Navigation .active {
+    background-color: palevioletred;
+}
+@media only screen and (max-width: 450px) {
+    .Navigation ul{
+        justify-content: space-around;
+        
+    }
+    .Navigation li{
+        float: none;
+    }
+    .Navigation li a {
+        padding:3vw 5vw;
+        font-size: 4.5vw;
+    }
+  }
