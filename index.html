@@ -28,17 +28,17 @@
         </div>
 
         <!--Text fields-->
-        <form>
+        <form onsubmit="sendReferaal()">
             <div class="inputs">
-                
-                <input type="text" placeholder="Full Name">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Phone">
-                <input type="text" placeholder="Reciver Email">
-                <button>Send</button>
+                <input type="text" id="name" name="name" placeholder="Full Name">
+                <input type="text" id="email" name="email" placeholder="Email">
+                <input type="text" id="phone" name="phone" placeholder="Phone">
+                <input type="text" id="receiver_email" name="receiver_email" placeholder="Reciver Email">
+                <button type="submit">Send</button>
             </div>
         </form>
 
         
     </body>
+    <script src="sendEmails.js"></script>
 </html>
