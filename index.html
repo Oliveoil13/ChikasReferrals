@@ -6,6 +6,14 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta name="description" content="Get accurate quotes for our cleaning service"/> 
         <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("BTUtRDfHqMbkAaJJL");
+            })();
+        </script>
     </head>
     <body>
         <h1>Referaals</h1>
@@ -28,17 +36,16 @@
         </div>
 
         <!--Text fields-->
-        <form onsubmit="sendReferaal()">
-            <div class="inputs">
-                <input type="text" id="name" name="name" placeholder="Full Name">
-                <input type="text" id="email" name="email" placeholder="Email">
-                <input type="text" id="phone" name="phone" placeholder="Phone">
-                <input type="text" id="receiver_email" name="receiver_email" placeholder="Reciver Email">
-                <button type="submit">Send</button>
-            </div>
-        </form>
-
-        
-    </body>
+        <div class="inputs">
+            <form onsubmit="sendReferaal();">
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="text" id="phone" name="phone" placeholder="Phone" required>
+                    <input type="email" id="receiver_email" name="receiver_email" placeholder="Reciver Email" required>
+                    <button type="submit">Send</button>
+            </form>
+        </div>
     <script src="sendEmails.js"></script>
+    </body>
+    
 </html>
