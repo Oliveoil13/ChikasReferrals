@@ -1,4 +1,4 @@
-function sendReferaal(){
+function sendReferral(){
     let parms = {
         name : document.getElementById("name").value,
         email : document.getElementById("email").value,
