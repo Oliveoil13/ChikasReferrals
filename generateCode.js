@@ -1,5 +1,5 @@
 
-const characters = "QWERTYUPASDFGHJKLZXCVBNM";
+const characters = "ABCDEFGHJKLMNPQRSTUVWXYZ";
 const digits = "0123456789";
 
 function MakeCode(){
