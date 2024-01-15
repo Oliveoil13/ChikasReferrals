@@ -1,4 +1,8 @@
 
+import supabase from './path/to/supabase';
+
+
+
 const characters = "ABCDEFGHJKLMNPQRSTUVWXYZ";
 const digits = "0123456789";
 
