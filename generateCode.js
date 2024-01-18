@@ -1,7 +1,4 @@
 
-import supabase from './path/to/supabase';
-
-
 
 const characters = "ABCDEFGHJKLMNPQRSTUVWXYZ";
 const digits = "0123456789";
@@ -30,3 +27,4 @@ function MakeCode(){
     
     document.getElementById("code").innerHTML = code;
 }
+
