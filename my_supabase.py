@@ -19,6 +19,7 @@ def index():
     response = supabase.table('Partners').select("*").execute()
     data = response.get('data', [])
 
+    print(data)
     # Pass data to the template
     return render_template('index.html', partners=data)
 
