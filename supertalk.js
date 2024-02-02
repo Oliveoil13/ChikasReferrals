@@ -1,8 +1,9 @@
 
 import createClient from '@supabase/supabase-js';
 
-const supabaseUrl = 'https://smstkcoswejjjelwwlfr.supabase.co'
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNtc3RrY29zd2VqamplbHd3bGZyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDUyOTIyODIsImV4cCI6MjAyMDg2ODI4Mn0.9O5C9Ornt8f21ZzMzFUQgb8j_85RXsJHh-azVQ5CdOI'
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
+
 const supabase = createClient(supabaseUrl, supabaseKey)
 const tableName = 'Partners';
 
@@ -18,5 +19,4 @@ async function fetchData() {
   console.log('Fetched data:', data);
 }
 
-// Call the fetchData function to retrieve data
 fetchData();
