@@ -15,13 +15,7 @@ supabase = create_client(url, key)
 
 @app.route('/')
 def index():
-    # Fetch data from Supabase
-    response = supabase.table('Partners').select("*").execute()
-    data = response.get('data', [])
-
-    print(data)
-    # Pass data to the template
-    return render_template('index.html', partners=data)
+    return "Hey"
 
 if __name__ == '__main__':
     app.run(debug=True)
